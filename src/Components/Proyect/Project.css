@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.Project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    .ProjectCard{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.5px solid #22f8ff;
+        gap: 10px;
+        width: 80%;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        .ProjectDescription{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 20rem;
+            p{
+                font-family: "Playfair Display", serif;
+                font-size: 12px;
+            }
+        }
+        .ProjectPicture{
+            display: block;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        padding: 10px;
+        overflow: hidden;
+            
+            video{
+                display: block;
+                width: 19rem;
+                border-style: hidden;
+                border:2px black solid;
+                .HiddenVideo{
+                    display: none;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    .ProjectDescription{
+       margin-top: 2rem;
+       margin-bottom: 2rem;
+    }
+    .ProjectPicture{
+        
+        video{
+            width: 10rem !important;
+            height: rem;
+        }
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        font-size: 10px;
+    }
+}

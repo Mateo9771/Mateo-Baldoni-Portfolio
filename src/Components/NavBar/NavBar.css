@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Ga+Maamli&family=Permanent+Marker&family=Tiny5&display=swap');
+.MB{
+    font-family: "Tiny5", sans-serif;
+  color: aliceblue;
+}
+.navbar-nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    .Link{
+        
+        letter-spacing: 3px;
+        color: #fff;
+    }
+}
+.navbar-toggler{
+    background-color: #4c7779;
+    border-style: 2px solid black;
+}
+
+
+@media only screen and (max-width: 575px){
+    .navbar {
+        padding-left: 3rem;
+        padding-right: 1rem;
+    }
+    .Link{
+        font-size: 9px;
+    }
+    .navbar-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+}

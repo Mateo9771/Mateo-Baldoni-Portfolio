@@ -1,0 +1,23 @@
+.ScrollIndicator {
+    text-align: center;
+    margin-top: 2.5rem;
+  } 
+  
+  .Arrow {
+    display: inline-block;
+    animation: bounce 2.2s infinite;
+    transition: transform 1s;
+    filter: drop-shadow(-1px 9px 8px #0adae9);
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
