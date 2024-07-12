@@ -1,7 +1,20 @@
 import React from 'react'
 import './Project.css'
+import { useEffect, useState } from 'react'
 
 const Project = ({events}) => {
+
+  const[isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+  }, [] )
+
+
   return (
    <div className='Project col-9'>
 
@@ -22,7 +35,13 @@ const Project = ({events}) => {
       </div>
     
       <div className='ProjectPicture'>
-      <video src={event.picture} className='HiddenVideo' controls width="100%" height="auto"></video>
+      {isMobile ? (
+              <a href={event.picture} target="_blank" rel="noopener noreferrer">
+                Ver video
+              </a>
+            ) : (
+              <video src={event.picture} className='HiddenVideo' controls width="100%" height="auto"></video>
+            )}
       </div>
 
       </div>)}

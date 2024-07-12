@@ -5,7 +5,6 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 10px 0;
     align-items: center;
     z-index: 1000;
     flex-wrap: wrap;
@@ -13,16 +12,21 @@
     background-color: #333;
     .BlockFooter{
         padding: 2rem;
-        width: 20rem;
+        width: 25rem;
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
         align-items: center;
         justify-content: center;
         height: 10rem;
         a{
             color: #fff;
         }   
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .BlockFooter{
+        width: 40rem !important;
     }
 }

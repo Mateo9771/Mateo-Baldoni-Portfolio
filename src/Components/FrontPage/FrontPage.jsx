@@ -4,11 +4,15 @@ import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
 import ScrollIndicator from '../ScrollIndicador/ScrollIndicador';
 import { Link } from 'react-scroll';
+import Photo from '../../assets/Photo.png'
 
 const FrontPage = () => {
   return (
     <div className='FrontPage col-12'>
         <div className='FontPageCenter col-9'>
+          <div className='Photo'>
+            <img src={Photo} alt="" />
+          </div>
             <div className='FrontPageTitle'>
             <p>Hola! Soy <span>Mateo</span></p>
             <h1>Web Developer</h1>
