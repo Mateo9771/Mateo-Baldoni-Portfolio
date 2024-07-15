@@ -10,9 +10,9 @@ const FrontPage = () => {
   return (
     <div className='FrontPage col-12'>
         <div className='FontPageCenter col-9'>
-          <div className='Photo'>
+          {/*<div className='Photo'>
             <img src={Photo} alt="" />
-          </div>
+          </div>*/}
             <div className='FrontPageTitle'>
             <p>Hola! Soy <span>Mateo</span></p>
             <h1>Web Developer</h1>

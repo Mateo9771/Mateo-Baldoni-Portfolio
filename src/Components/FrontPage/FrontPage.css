@@ -12,8 +12,9 @@
         padding-top: 2rem;
         align-items: center;
         flex-direction: column;
+        justify-content: center;
         gap: 3rem;
-        .Photo{
+        /*.Photo{
             width: 10rem;
             height: 10rem;
             border-radius: 50%;
@@ -25,7 +26,7 @@
                 justify-content: center;
                 align-items: center;
             }
-        }
+        }*/
         .FrontPageTitle{
             display: flex;
             justify-content: center;
@@ -51,14 +52,14 @@
         align-items: center;
         gap: 0rem !important;
         padding-top: 1rem !important;
-        .Photo{
+       /* .Photo{
                 width: 8rem !important;
                 height: 8rem !important;
             img{
                 width: 8rem !important;
                 height: 8rem !important;
             }
-        }
+        }*/
        .FrontPageTitle{
         h1{
             font-size: 15px;

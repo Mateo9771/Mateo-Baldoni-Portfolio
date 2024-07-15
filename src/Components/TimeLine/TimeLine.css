@@ -32,6 +32,7 @@
           width: 90%;
           border-radius: 10px;
           flex-wrap: wrap;
+          margin-bottom: 2rem;
           .TimeLineContent {
             padding: 10px 20px;
             width: 20rem;
