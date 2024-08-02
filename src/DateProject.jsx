@@ -1,9 +1,9 @@
-import AppTask from './assets/Proyectos/AppTask.mp4'
 import ECommerce from './assets/Proyectos/E-Commerce.mp4'
 import FanPage from './assets/Proyectos/FanPage.mp4'
 import InstitucionSite from './assets/Proyectos/InstitucionalSite.mp4'
 import AppFinanzas from './assets/Proyectos/GestorFinanzas.mp4'
 import PortfolioDB from './assets/Proyectos/PorfolioDB.mp4'
+import LoginAndRegister from './assets/Proyectos/Login&Register.mp4'
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
@@ -12,6 +12,8 @@ import { FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa";
 import { TbBrandVite } from "react-icons/tb";
+import { FaNodeJs } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
 
 const proyectos = [
     {
@@ -64,6 +66,22 @@ const proyectos = [
             <FaSass size='1.5rem' color='pink' />,
             <FaBootstrap size='1.5rem' color='violet'/>,
         ]
+    },
+    {
+        name: 'Login & Register',
+        description:'Desarrollo de una aplicación web segura con funcionalidades de registro e inicio de sesión. Utilicé React para el frontend y Express con MySQL para el backend. Implementé medidas de seguridad como encriptación de contraseñas con bcrypt y autenticación mediante tokens JWT',
+        github: 'https://github.com/Mateo9771/Login-register.git',
+        skills:[
+            <FaHtml5 size='1.5rem' color='orange'/>,
+            <FaCss3Alt size='1.5rem' color='blue' />,
+            <FaBootstrap size='1.5rem' color='violet'/>,
+            <DiJavascript size='1.5rem' color='yellow'/>,
+            <FaReact size='1.5rem' color='#22f8ff'/>,
+            <SiMysql size='1.5rem' color='white'/>,
+            <FaNodeJs size='1.5rem' color='green'/>
+
+        ],
+        picture: LoginAndRegister,
     },
     {
         name: 'Gestor de Finanzas',

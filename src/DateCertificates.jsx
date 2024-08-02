@@ -17,6 +17,8 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { FaNpm } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandVite } from "react-icons/tb";
+import { SiCplusplus } from "react-icons/si";
+import { SiPostgresql } from "react-icons/si";
 
 const Certificates = [
     {
@@ -98,12 +100,29 @@ const Certificates = [
        img: CoderhouseFER,
     },
     {
-        title: 'Carrera de desarrollo Back End',
+        title: 'SQL',
        institucion: 'Coderhouse', 
        state:'Inicio',
-       fecha: '08/08/2024',
+       fecha: '05/08/2024',
        description: '',
        img: Locked
+    }
+]
+
+const Tecnico = [
+    {
+        title: 'Tecnicatura superior en programación',
+        institucion: 'TECLAB', 
+        category:'tecnico',
+        state:'En curso',
+        fecha: '04/04/2023',
+        description: [
+            <SiCplusplus size='1.5rem' color='#1fa1d4'/>,
+            <SiPostgresql size='1.5rem' color='white'/>,
+            <SiMysql color='white' size='1.5rem'/>
+         ],
+             
+        img: Locked,   
     }
 ]
 
@@ -111,6 +130,14 @@ export const getCertificates = () => {
     return new Promise ((resolve) => {
         setTimeout(() => {
             resolve(Certificates)
+        })
+    })
+}
+
+export const getCertificatesTec = () => {
+    return new Promise ((resolve) => {
+        setTimeout(() => {
+            resolve(Tecnico)
         })
     })
 }
